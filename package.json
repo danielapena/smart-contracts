@@ -1,0 +1,24 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testnet:deploy": "npx hardhat run scripts/deploy.ts --network testnet",
+    "testnet:deploy-verify": "npx hardhat run scripts/deploy-verify.ts --network testnet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.4",
+    "prettier-plugin-solidity": "^1.0.0-dev.23"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  }
+}
